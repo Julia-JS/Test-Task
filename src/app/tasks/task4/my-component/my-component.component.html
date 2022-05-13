@@ -1,0 +1,12 @@
+<div class="child">
+  <h5>Child Component</h5>
+  <p>Value from parent:</p>
+  <div class="child__value">{{ param }}</div>
+  <div>Found items:</div>
+  <div class="child__items">
+    <div *ngFor="let item of items" class="child__item">
+      {{ item }}
+    </div>
+  </div>
+</div>
+

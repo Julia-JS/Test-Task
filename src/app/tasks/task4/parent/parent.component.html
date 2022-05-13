@@ -1,0 +1,9 @@
+<div class="parent">
+  <div>
+    <h5>Parent Component</h5>
+    <label>Enter some number from 0 to 9:
+      <input type="text" (keyup)="changeInputValue($event)">
+    </label>
+  </div>
+  <app-my-component [param]="value"></app-my-component>
+</div>

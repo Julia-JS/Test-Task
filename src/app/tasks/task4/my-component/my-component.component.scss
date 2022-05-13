@@ -1,0 +1,29 @@
+.child {
+  padding: 12px;
+  height: 350px;
+  border: 2px solid black;
+
+  &__value {
+    margin-bottom: 16px;
+    padding: 4px;
+    height: 16px;
+    border: 1px solid black;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 12px;
+    margin-bottom: 12px;
+    height: 48px;
+    width: 48px;
+    border: 1px solid black;
+
+    &s {
+      margin-top: 16px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+}

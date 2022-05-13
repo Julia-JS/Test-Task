@@ -1,0 +1,19 @@
+.tasks {
+  display: flex;
+  margin-bottom: 48px;
+
+  &__item {
+    margin-right: 24px;
+    color: black;
+    cursor: pointer;
+    text-decoration: underline;
+
+    &--active {
+      font-weight: bold;
+    }
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}

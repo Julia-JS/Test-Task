@@ -1,0 +1,13 @@
+<div>
+  2. Требуется написать функцию, принимающую на вход строку. Функция должна
+  возвращать true, если входная строка является валидной датой в формате
+  "дд.мм.гггг", и false в противном случае. Не использовать сторонние библиотеки
+  (Moment.js и т.п.)
+</div>
+<hr />
+<label>Enter date:
+  <input #initialDate type="text">
+</label>
+<hr />
+<button (click)="dateFormatCheck(initialDate.value)">Is valid?</button>
+<div #valid></div>

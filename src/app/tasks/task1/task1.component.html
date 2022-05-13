@@ -1,0 +1,14 @@
+<div>
+  1.
+  Требуется написать функцию, принимающую на вход массив чисел произвольной длины.
+  Функция должна возвращать массив неуникальных чисел (которые встречаются в исходном массиве более 1 раза).
+  Например, для входного значения [1, 2, 3, 1, 2, 5, 1] должно вернуться значение [1, 2].
+</div>
+<hr>
+<label>Enter numbers separated by commas:
+  <input #initialArray>
+</label>
+<button (click)="find()">Find non-unique numbers</button>
+<hr>
+<div>Array with non-unique numbers:</div>
+<div #finalArray></div>

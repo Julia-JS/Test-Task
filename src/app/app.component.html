@@ -1,0 +1,6 @@
+<div class="tasks">
+  <div *ngFor="let task of tasks; index as i" class="tasks__item">
+    <div [routerLink]="'/task' + (i + 1)" [routerLinkActive]="'tasks__item--active'">{{ 'Task' + (i + 1)  }}</div>
+  </div>
+</div>
+<router-outlet></router-outlet>
