@@ -21,7 +21,10 @@ export class MyComponentComponent implements OnChanges {
 
   ngOnChanges(changes: SimpleChanges): void {
     if (changes.param.previousValue !== changes.param.currentValue) {
-      this.items = this.param === '' ? this.array : this.array.filter((x) => x === +this.param);
+      this.items =
+        this.param === ''
+          ? this.array
+          : this.array.filter((x) => x === +this.param);
     }
   }
 }
